@@ -1,57 +1,53 @@
-🌟 AI-Powered News Insight Engine
-Introduction
+# 🌟 AI-Powered News Insight Engine
 
-The AI-Powered News Insight Engine is a full-stack web application that processes real-time news data and delivers intelligent, personalized insights. Leveraging advanced AI techniques, it helps users overcome information overload and consume news efficiently.
+## ✨ Introduction
+The AI-Powered News Insight Engine is a full-stack web application designed to process real-time news and deliver personalized, intelligent insights. Using state-of-the-art AI, it helps users cut through information overload and consume news efficiently.
 
-Problem Statement
+## 📝 Problem Statement
+Digital news is everywhere, and the sheer volume makes it hard to keep up. Extracting key insights manually is time-consuming and inefficient.
 
-With the explosion of digital news sources, users face an overwhelming volume of articles daily. Manually extracting key insights is time-consuming and inefficient.
+This engine automates news filtering, summarization, sentiment analysis, and entity extraction, helping users make faster, smarter decisions.
 
-This project automates:
+## 🚀 Core Features
+- 📰 **Real-Time News Access:** Input topics or browse live feeds
+- 🌐 **Data Sources:** NewsAPI & RSS feeds
+- 📝 **Summarization:** AI-generated concise summaries
+- 👥 **Named Entity Recognition (NER):** People, locations, organizations
+- 📊 **Sentiment Analysis:** Detect article tone and bias
+- ❓ **Question Answering:** Ask questions over news content
+- 🖼️ **Multimodal Analysis:** Images & audio insights
+- 📈 **Interactive Dashboards:** Sentiment trends, live updates, search
+- 📤 **Shareable Reports:** Export insights & voice-narrated briefings
 
-News filtering
-Sentiment analysis
-Named Entity Recognition (NER)
-Insight generation
+## 🏗️ System Architecture
+### 1️⃣ Data Ingestion
+- Fetch articles via NewsAPI and RSS feeds
+- Store in MySQL
+- Generate vector embeddings for semantic search
 
-…to streamline news consumption and empower informed decision-making.
+### 2️⃣ AI Pipeline
+- **Summarization:** BART
+- **Question Answering:** DistilBERT
+- **Sentiment Analysis:** RoBERTa
+- **NER:** Named Entity Recognition
+- **Vision:** BLIP for image captioning
+- **FastAPI:** Model orchestration
+- **Celery:** Asynchronous task processing
 
-Core Features
-News Access: Input topics or browse real-time news feeds
-Data Sources: Fetch articles via NewsAPI and RSS feeds
-Summarization: Generate concise summaries using AI models
-Named Entity Recognition (NER): Extract people, locations, and organizations
-Sentiment Analysis: Detect article tone and bias
-Question Answering: Ask questions over news content
-Multimodal Analysis: Analyze images and audio within articles
-Interactive Dashboards: Explore sentiment trends, expandable articles, and search
-Shareable Insights: Export reports and voice-narrated briefings
-System Architecture
-1. Data Ingestion
-Collect news from NewsAPI and RSS feeds
-Store articles in MySQL
-Generate vector embeddings for semantic search
-2. AI Pipeline
-Summarization: BART model
-Question Answering: DistilBERT
-Sentiment Analysis: RoBERTa
-Named Entity Recognition
-Vision Analysis: BLIP for image captioning
-FastAPI: Orchestrates AI models
-Celery: Handles asynchronous processing
-3. Frontend
-Built with Next.js for a responsive interface
-Real-time updates via WebSockets
-Features: live insights, expandable articles, search, export
-4. Scalability & Deployment
-Containerized with Docker
-Deployed on Kubernetes
-Redis caching for improved performance
-Serverless inference to handle traffic spikes
-Real-World Impact
+### 3️⃣ Frontend
+- Built with React.js for a responsive UI
+- Real-time updates via WebSockets
+- Features: live insights, expandable articles, search, export
 
-This system helps journalists, analysts, and executives quickly understand large volumes of news, providing:
+### 4️⃣ Scalability & Deployment
+- Dockerized containers
+- Kubernetes deployment
+- Redis caching for high performance
+- Serverless inference for peak traffic handling
 
-Actionable insights
-Faster, more informed decisions
-Efficient monitoring of trends and events
+## 💡 Real-World Impact
+This engine empowers journalists, analysts, and executives to:
+- Extract actionable insights quickly
+- Make faster, informed decisions
+- Monitor trends and events efficiently
+
